@@ -6,7 +6,8 @@ RUN apt-get update && apt-get install -yq --no-install-recommends \
         ca-certificates \
         curl \
         && \
-    curl -sSL https://get.haskellstack.org/ | sh
+    curl -sSL https://get.haskellstack.org/ | sh && \
+    stack --version
 
 RUN useradd --create-home stackuser
 
