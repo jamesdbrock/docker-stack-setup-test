@@ -18,4 +18,4 @@ WORKDIR /home/jovyan
 RUN \
     echo 'resolver: lts-13.25\npackages: []' > stack.yaml && \
 #    TAR_OPTIONS='--verbose --verbose --verbose --ignore-command-error --ignore-failed-read' XZ_OPT='--verbose --verbose' stack setup --verbose
-    TAR_OPTIONS='--verbose --verbose --verbose' XZ_OPT='--verbose --verbose' stack setup --verbose
+    TAR_OPTIONS='--verbose --verbose --verbose' XZ_OPT='--verbose --verbose' stack setup --verbose --color always
