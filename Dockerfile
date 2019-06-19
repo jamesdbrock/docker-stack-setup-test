@@ -1,6 +1,6 @@
-ARG BASE_CONTAINER=jupyter/minimal-notebook
+ARG BASE_CONTAINER=jupyter/base-notebook
 FROM $BASE_CONTAINER
-
+#FROM ubuntu:bionic-20180526@sha256:c8c275751219dadad8fa56b3ac41ca6cb22219ff117ca98fe82b42f24e1ba64e
 USER root
 
 # Install Haskell Stack and its dependencies
